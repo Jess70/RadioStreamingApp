@@ -3,10 +3,7 @@ import { View, StyleSheet, Text, TouchableOpacity, ImageBackground } from 'react
 import { Ionicons } from '@expo/vector-icons';
 import music from '../Cogent-app - Copy/assets/music.jpg'
 const axios = require('axios').default;
-var VideoPlayer = require('react-native-native-video-player');
- 
-
-
+//import {LivePlayer} from "react-native-live-stream";
 
 
 class App extends React.Component {
@@ -45,13 +42,26 @@ class App extends React.Component {
     } else {
       this.setState({ play: true });
     }
-    try {
-      VideoPlayer.showVideoPlayer(url);
-
+      {
+        /*
+          try {
+      <LivePlayer source={{uri:"rtmp://live.hkstv.hk.lxdns.com/live/hks"}}
+        ref={(ref) => {
+            this.player = ref
+        }}
+        style={styles.video}
+        paused={false}
+        muted={false}
+        bufferTime={300}
+        maxBufferTime={1000}
+        
+      />
         } catch (e) {
             console.log(`cannot play the sound file`, e)
         }
-        }
+        */
+      }
+    }
   
   
   render(){
