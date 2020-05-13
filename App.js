@@ -45,7 +45,7 @@ class App extends React.Component {
       {
    
           try {
-      <LivePlayer source={{uri:"rtmp://live.hkstv.hk.lxdns.com/live/hks"}}
+      <LivePlayer source={{uri:"rtsp://streamlky.alsolnet.com/mantrafm/mantrafm.stream"}}
         ref={(ref) => {
             this.player = ref
         }}
